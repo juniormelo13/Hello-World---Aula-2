@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+
+/** Menu */
+
+.menu-item {
+    list-style: none;
+    height: 10px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.menu-item a {
+    color: green;
+    background-color: white;
+    transition: all 0.3s linear;
+}
+
+.menu-item a:hover {
+    background-color: green;
+    color: white;
+}
+
+.menu-link {
+  color: black;  
+}
+
+#cabecalho {
+    height: 100vh;
+    background-color: green;
+    
+}
+
+.animate-scale {
+    transition: all .2s linear;
+    animation: scaleDiv .5s;
+    animation-delay: 1s;
+}
+
+.animate-whiteToGreen {
+    transition: all .2s linear;
+    animation: whiteToGreen .5s ;
+}
+
+/** ANIMAÇÕES */
+@keyframes scaleDiv {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes whiteToGreen {
+    from {
+       background-color: white;
+    }
+    to {
+       background-color: green;
+    }
+}
+
+@-webkit-keyframes whiteToGreen {
+    from {background-color: white;}
+    to {background-color: green;}
+}
